@@ -4,8 +4,8 @@ maintainer_email 'guilhem@lettron.fr'
 license 'Apache-2.0'
 description 'Installs/Configures node.js'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-source_url 'https://github.com/redguide/nodejs'
-issues_url 'https://github.com/redguide/nodejs/issues'
+source_url 'https://github.com/redguide/nodejs' if respond_to?(:source_url)
+issues_url 'https://github.com/redguide/nodejs/issues' if respond_to?(:issues_url)
 chef_version '>= 12.14' if respond_to?(:chef_version)
 version '5.0.0'
 
